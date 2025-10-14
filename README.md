@@ -25,6 +25,7 @@ qmk setup
 
 ![badd40](images/badd40.jpg?raw=true "badd40")
 
+### about
 *Based on 0_sixty*
 
 * Keyboard Maintainer: [whateverany](https://github.com/whateverany)
