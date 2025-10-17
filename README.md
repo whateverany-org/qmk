@@ -6,10 +6,10 @@ Small repo with custom whateverany keyboard code, maps and tools.
 To compile, symlink keyboards to qmk_firmware/keyboards. e.g.
 
 ```
-mkdir -p ~/src/github.com/whateverany-scratch/qmk
+mkdir -p ~/src/github.com/whateverany-org/qmk
 git clone git@github.com:qmk/qmk_firmware.git
 cd ~/src/github.com/qmk/qmk_firmware/keyboards
-ln -s ~/src/github.com/whateverany-scratch/qmk/keyboards/whateverany
+ln -s ~/src/github.com/whateverany-org/qmk/keyboards/whateverany
 
 cd ~/src/github.com/qmk/qmk_firmware
 python3 -m venv .venv
@@ -52,3 +52,6 @@ See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_to
 ![keyboard_build_01](images/keyboard_build_01.jpg?raw=true "keyboard_build_01")
 ![keyboard_build_02](images/keyboard_build_02.jpg?raw=true "keyboard_build_02")
 
+# microcontrollers
+
+./isp55e0/isp55e0 --debug -f .build/whateverany_badd40_default.bin

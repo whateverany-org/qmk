@@ -41,7 +41,7 @@
       "twinkle": true
     }
   },
-  "meta": "https://whateverany.com/whateverany-scratch/qmk",
+  "meta": "https://whateverany.com/whateverany-org/qmk",
   "url": "https://www.whateverany.com",
   "usb": {
     "device_version": "1.0.0",
