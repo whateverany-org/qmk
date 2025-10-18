@@ -59,7 +59,7 @@ Intended to be a keyboard for the gamers in the family.
 Inspired by the [gherkin](https://www.40percent.club/2016/11/gherkin.html).
 
 ## Hardware
-- [github.com/whateverany-org/qmk/git.40percent.club.tetrominoes](https://github.com/whateverany-org/qmk/tree/main/git.40percent.club.tetrominoes) under the original [Creative Commons Attribution-ShareAlike 4.0 International License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)
+The Gerber files are now in here [github.com/whateverany-org/qmk/git.40percent.club.tetrominoes](https://github.com/whateverany-org/qmk/tree/main/git.40percent.club.tetrominoes) under the original [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).
 
 ### Parts list
 - AU$59.84 = 1xAU$39.36 + AU$20.48 shipping [JCLPCB PCB fabrication (25xT, 25xL, 25xS, 25xStick & 25xCube)](https://jlcpcb.com/)
@@ -89,7 +89,10 @@ Keen to try this one next:
 ### Bluepill V2 (STM32)
 Tried the "_STM32_" compatible CH32F103C8T6 - too much of a hassle programing/flashing.
 - AU$35.75 = 10xAU$3.56 [CH32F103C8T6 USB-C](https://www.aliexpress.com/item/32719680030.html)
-`./isp55e0/isp55e0 --debug -f .build/whateverany_badd40_default.bin`
+
+```
+./isp55e0/isp55e0 --debug -f .build/whateverany_badd40_default.bin
+```
 
 ### Blackpill (NRF52840 with bluetooth)
 Not officially supported by QMK, fork projects are somewhat complex/limited.
@@ -101,7 +104,7 @@ AU$25.39 = 6x$4.23 [HC-05 6 pin](https://www.aliexpress.com/item/32340945238.htm
 
 ## Links
 - [40percent.club tetrominoes blog article](http://www.40percent.club/2019/12/tetrominoes.html)
-  - Gerber files [git.40percent.club/di0ib/Misc/tetrominoes](https://git.40percent.club/di0ib/Misc/src/branch/master/tetrominoes] (**DEFUNCT** since [~2025-JAN-26](https://web.archive.org/web/20250126081724/https://git.40percent.club/di0ib/Misc/src/branch/master/tetrominoes) and missing from [github.com/di0ib/Misc](https://github.com/di0ib/Misc))
+  - Gerber files [git.40percent.club/di0ib/Misc/tetrominoes](https://git.40percent.club/di0ib/Misc/src/branch/master/tetrominoes) (**DEFUNCT** since [~2025-JAN-26](https://web.archive.org/web/20250126081724/https://git.40percent.club/di0ib/Misc/src/branch/master/tetrominoes) and missing from [github.com/di0ib/Misc](https://github.com/di0ib/Misc))
     - Now archived to [github.com/whateverany-org/qmk/git.40percent.club.tetrominoes](https://github.com/whateverany-org/qmk/tree/main/git.40percent.club.tetrominoes) under [Creative Commons Attribution-ShareAlike 4.0 International License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png) after finding here [github.com/Ardakilic/git.40percent.club/tetrominoes](https://github.com/Ardakilic/git.40percent.club/tree/master/tetrominoes)
 - [redit article](https://www.40percent.club/2019/12/tetrominoes.html)
 - [kbd.news article](https://kbd.news/Tetrominoes-in-action-751.html)
