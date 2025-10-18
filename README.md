@@ -65,42 +65,42 @@ The Gerber files are now in here [github.com/whateverany-org/qmk/git.40percent.c
 
 | Part | Unit | Total |
 | +--- | ---+ | ----+ |
-| [JCLPCB PCB fabrication (25xT, 25xL, 25xS, 25xStick & 25xCube)](https://jlcpcb.com/) 1xAU$39.36 + AU$20.48 shipping  | AU$59.84 |
-| [3PCS/LOT ATmega32U4 Pro Micro Dev Board (x2)](https://www.aliexpress.com/item/32952028063.html) 2xAU$15.92  | AU$31.83 |
-| [200PCS/LOT Outemu Brown Key Switches](https://www.aliexpress.com/item/1005001864766812.html) 1xAU$53.41  | AU$53.41 |
-| [110PCS/LOT Keycaps (140xGray, 40xRed & 40xBlack)](https://www.aliexpress.com/item/32830177884.html) 2xAU$27.33  | AU$50.88 |
-| [110PCS/LOT Keycaps (60xgreen, 50xyellow, 50xorange & 60xblue)](https://www.aliexpress.com/item/32832417476.html) 2xAU$25.44  | AU$54.65 |
-| [100PCS/LOT 1N4148 Diodes (x3)](https://www.aliexpress.com/item/1005002339916163.html) 3xAU$2.96  | AU$8.86 |
-| [100PCS/LOT 0ohm Resistors](https://www.aliexpress.com/item/32952657927.html) 3xAU$3.31  | AU$9.93 |
+| [JCLPCB PCB fabrication (25xT, 25xL, 25xS, 25xStick & 25xCube)](https://jlcpcb.com/) | 1xAU$39.36 + AU$20.48 shipping  | AU$59.84 |
+| [3PCS/LOT ATmega32U4 Pro Micro Dev Board (x2)](https://www.aliexpress.com/item/32952028063.html) | 2xAU$15.92  | AU$31.83 |
+| [200PCS/LOT Outemu Brown Key Switches](https://www.aliexpress.com/item/1005001864766812.html) | 1xAU$53.41  | AU$53.41 |
+| [110PCS/LOT Keycaps (140xGray, 40xRed & 40xBlack)](https://www.aliexpress.com/item/32830177884.html) | 2xAU$27.33  | AU$50.88 |
+| [110PCS/LOT Keycaps (60xgreen, 50xyellow, 50xorange & 60xblue)](https://www.aliexpress.com/item/32832417476.html) | 2xAU$25.44  | AU$54.65 |
+| [100PCS/LOT 1N4148 Diodes (x3)](https://www.aliexpress.com/item/1005002339916163.html) | 3xAU$2.96  | AU$8.86 |
+| [100PCS/LOT 0ohm Resistors](https://www.aliexpress.com/item/32952657927.html) | 3xau$3.31  | au$9.93 |
 
-**AU$269.40 TOTAL** (or 6 keyboards @ AU$44.90 per keyboard)
+**au$269.40 total** (or 6 keyboards @ au$44.90 per keyboard)
 
 ## microcontrollers
-Various microcontrollers tried. Some of these microcontrollers may just be surplus stock from other IoT projects, not specifically for QMK.
+various microcontrollers tried. some of these microcontrollers may just be surplus stock from other iot projects, not specifically for qmk.
 
-### Bluepill (ATmega32U4)
-Originally build using the ATmega32U4 Pro Micro Dev (microUSB) - see [Parts list](#parts-list).
+### bluepill (atmega32u4)
+originally build using the atmega32u4 pro micro dev (microusb) - see [parts list](#parts-list).
 
-### **RP2040**
+### **rp2040**
 
-| Part | Unit | Total |
+| part | unit | total |
 | +--- | ---+ | ----+ |
-| [RP2040 Pico Board](https://www.aliexpress.com/item/1005003371056277.html) 1xAU$5.81  | AU$5.81 |
+| [rp2040 pico board](https://www.aliexpress.com/item/1005003371056277.html) | 1xau$5.81  | au$5.81 |
 
-A dream to program, compared to everything else. Has onboard RGB LED.
+a dream to program, compared to everything else. has onboard rgb led.
 
 Keen to try this one next:
 
 | Part | Unit | Total |
 | +--- | ---+ | ----+ |
-| [RP2040-Zero Pico](https://www.aliexpress.com/item/1005007650325892.html) 10xAU$3.37  | AU$33.65 |
+| [RP2040-Zero Pico](https://www.aliexpress.com/item/1005007650325892.html) | 10xAU$3.37  | AU$33.65 |
 
 ### Bluepill V2 (STM32)
 Tried the "_STM32_" compatible CH32F103C8T6 - too much of a hassle programing/flashing.
 
 | Part | Unit | Total |
 | +--- | ---+ | ----+ |
-| [CH32F103C8T6 USB-C](https://www.aliexpress.com/item/32719680030.html) 10xAU$3.56  | AU$35.75 |
+| [CH32F103C8T6 USB-C](https://www.aliexpress.com/item/32719680030.html) | 10xAU$3.56  | AU$35.75 |
 
 ```
 ./isp55e0/isp55e0 --debug -f .build/whateverany_badd40_default.bin
@@ -111,14 +111,14 @@ Not officially supported by QMK, fork projects are somewhat complex/limited.
 
 | Part | Unit | Total |
 | +--- | ---+ | ----+ |
-| [NRF52840 Nice!Nano dev board](https://www.aliexpress.com/item/1005007097467339.html) 8xAU$8.52  | $AU$68.33 |
+| [NRF52840 Nice!Nano dev board](https://www.aliexpress.com/item/1005007097467339.html) | 8xAU$8.52  | $AU$68.33 |
 
 ### HC-05 bluetooth
 Can be used with a microcontroller to add bluetooth (I2C?).
 
 | Part | Unit | Total |
 | +--- | ---+ | ----+ |
-| [HC-05 6 pin](https://www.aliexpress.com/item/32340945238.html) 6x$4.23  | AU$25.39 |
+| [HC-05 6 pin](https://www.aliexpress.com/item/32340945238.html) | 6x$4.23  | AU$25.39 |
 
 ## Links
 - [40percent.club tetrominoes blog article](http://www.40percent.club/2019/12/tetrominoes.html)
