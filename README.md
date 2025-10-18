@@ -19,22 +19,21 @@ source .venv/bin/activate
 pip install qmk
 qmk setup
 ```
-
-### babe30
-![babe30](images/babe30.jpg?raw=true "babe30")
+### As-Built images
+![keyboard_build_01](images/keyboard_build_01.jpg?raw=true "keyboard_build_01")
+![keyboard_build_02](images/keyboard_build_02.jpg?raw=true "keyboard_build_02")
 
 ### badd40
-
 ![badd40](images/badd40.jpg?raw=true "badd40")
 
 #### about
-*Based on 0_sixty*
+Originally inspired by the _[planck](https://github.com/qmk/qmk_firmware/tree/master/keyboards/planck/)_ which led me to the [40% club](https://www.40percent.club), and things like the _[let's split](https://www.40percent.club/2017/07/conjoined-lets-split.html)_, and  the _[tetrominoes](https://www.40percent.club/2019/12/tetrominoes.html).
 
 * Keyboard Maintainer: [whateverany](https://github.com/whateverany)
 * Hardware Supported: *The PCBs, controllers supported*
 * Hardware Availability: *Links to where you can find this hardware*
 
-Make example for this keyboard (after setting up your build environment):
+Compile/flash example for this keyboard (after setting up your build environment):
 
 ```
 qmk compile -kb whateverany -km badd40
@@ -50,14 +49,11 @@ See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_to
 
 ### beef60
 ![beef60](images/beef60.jpg?raw=true "beef60")
+Intended to be a keyboard for the gamers in the family.
 
-# Build images
-![keyboard_build_01](images/keyboard_build_01.jpg?raw=true "keyboard_build_01")
-![keyboard_build_02](images/keyboard_build_02.jpg?raw=true "keyboard_build_02")
-
-# microcontrollers
-
-./isp55e0/isp55e0 --debug -f .build/whateverany_badd40_default.bin
+### babe30
+![babe30](images/babe30.jpg?raw=true "babe30")
+Inspired by the [gherkin](https://www.40percent.club/2016/11/gherkin.html).
 
 ## Hardware
 - [github.com/whateverany-org/qmk/git.40percent.club.tetrominoes](https://github.com/whateverany-org/qmk/tree/main/git.40percent.club.tetrominoes) under the original [Creative Commons Attribution-ShareAlike 4.0 International License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)
@@ -69,8 +65,36 @@ See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_to
 - AU$50.88 = 2xAU$27.33 [110PCS/LOT Keycaps (140xGray, 40xRed & 40xBlack)](https://www.aliexpress.com/item/32830177884.html)
 - AU$54.65 = 2xAU$25.44 [110PCS/LOT Keycaps (60xgreen, 50xyellow, 50xorange & 60xblue)](https://www.aliexpress.com/item/32832417476.html)
 - AU$8.86 = 3xAU$2.96 [100PCS/LOT 1N4148 Diodes (x3)](https://www.aliexpress.com/item/1005002339916163.html)
-- AU$9.93 = 3xAU$3.31 [100PCS/LOT 0ohm Resistors](https://www.aliexpress.com/item/329Diodes52657927.html)
-- **AU$269.40 TOTAL**
+- AU$9.93 = 3xAU$3.31 [100PCS/LOT 0ohm Resistors](https://www.aliexpress.com/item/32952657927.html)
+
+**AU$269.40 TOTAL** (or 6 keyboards @ AU$44.90 per keyboard)
+
+## microcontrollers
+Various microcontrollers tried. Some of these microcontrollers may just be surplus stock from other IoT projects, not specifically for QMK.
+
+### Bluepill (ATmega32U4)
+Originally build using the ATmega32U4 Pro Micro Dev (microUSB) - see [Parts list](#parts-list).
+
+### **RP2040**
+- AU$5.81 = 1xAU$5.81 [RP2040 Pico Board](https://www.aliexpress.com/item/1005003371056277.html)
+
+A dream to program, compared to everything else. Has onboard RGB LED.
+
+Keen to try this one next:
+- AU$33.65 = 10xAU$3.37 [RP2040-Zero Pico](https://www.aliexpress.com/item/1005007650325892.html)
+
+### Bluepill V2 (STM32)
+Tried the "_STM32_" compatible CH32F103C8T6 - too much of a hassle programing/flashing.
+- AU$35.75 = 10xAU$3.56 [CH32F103C8T6 USB-C](https://www.aliexpress.com/item/32719680030.html)
+`./isp55e0/isp55e0 --debug -f .build/whateverany_badd40_default.bin`
+
+### Blackpill (NRF52840 with bluetooth)
+Not officially supported by QMK, fork projects are somewhat complex/limited.
+- $AU$68.33 = 8xAU$8.52 [NRF52840 Nice!Nano dev board](https://www.aliexpress.com/item/1005007097467339.html)
+
+### HC-05 bluetooth
+Can be used with a microcontroller to add bluetooth (I2C?).
+AU$25.39 = 6x$4.23 [HC-05 6 pin](https://www.aliexpress.com/item/32340945238.html)
 
 ## Links
 - [40percent.club tetrominoes blog article](http://www.40percent.club/2019/12/tetrominoes.html)
