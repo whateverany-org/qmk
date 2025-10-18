@@ -62,6 +62,7 @@ Inspired by the [gherkin](https://www.40percent.club/2016/11/gherkin.html).
 The Gerber files are now in here [github.com/whateverany-org/qmk/git.40percent.club.tetrominoes](https://github.com/whateverany-org/qmk/tree/main/git.40percent.club.tetrominoes) under the original [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).
 
 ### Parts list
+
 | Part | Unit | Total |
 | +--- | ---+ | ----+ |
 | [JCLPCB PCB fabrication (25xT, 25xL, 25xS, 25xStick & 25xCube)](https://jlcpcb.com/) 1xAU$39.36 + AU$20.48 shipping  | AU$59.84 |
@@ -81,6 +82,7 @@ Various microcontrollers tried. Some of these microcontrollers may just be surpl
 Originally build using the ATmega32U4 Pro Micro Dev (microUSB) - see [Parts list](#parts-list).
 
 ### **RP2040**
+
 | Part | Unit | Total |
 | +--- | ---+ | ----+ |
 | [RP2040 Pico Board](https://www.aliexpress.com/item/1005003371056277.html) 1xAU$5.81  | AU$5.81 |
@@ -88,12 +90,14 @@ Originally build using the ATmega32U4 Pro Micro Dev (microUSB) - see [Parts list
 A dream to program, compared to everything else. Has onboard RGB LED.
 
 Keen to try this one next:
+
 | Part | Unit | Total |
 | +--- | ---+ | ----+ |
 | [RP2040-Zero Pico](https://www.aliexpress.com/item/1005007650325892.html) 10xAU$3.37  | AU$33.65 |
 
 ### Bluepill V2 (STM32)
 Tried the "_STM32_" compatible CH32F103C8T6 - too much of a hassle programing/flashing.
+
 | Part | Unit | Total |
 | +--- | ---+ | ----+ |
 | [CH32F103C8T6 USB-C](https://www.aliexpress.com/item/32719680030.html) 10xAU$3.56  | AU$35.75 |
@@ -104,12 +108,14 @@ Tried the "_STM32_" compatible CH32F103C8T6 - too much of a hassle programing/fl
 
 ### Blackpill (NRF52840 with bluetooth)
 Not officially supported by QMK, fork projects are somewhat complex/limited.
+
 | Part | Unit | Total |
 | +--- | ---+ | ----+ |
 | [NRF52840 Nice!Nano dev board](https://www.aliexpress.com/item/1005007097467339.html) 8xAU$8.52  | $AU$68.33 |
 
 ### HC-05 bluetooth
 Can be used with a microcontroller to add bluetooth (I2C?).
+
 | Part | Unit | Total |
 | +--- | ---+ | ----+ |
 | [HC-05 6 pin](https://www.aliexpress.com/item/32340945238.html) 6x$4.23  | AU$25.39 |
