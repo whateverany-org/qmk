@@ -6,8 +6,12 @@ From these 5 **tetromino** base patterns (the _tetris_ game shapes), you can bui
 To use, drop (or symlink) [github.com/whateverany-org/qmk/keyboards/*](https://github.com/qmk/qmk_firmware/tree/master/keyboards/whateverany/) in a clone of [github.com/qmk/qmk_firmware/keyboards/](https://github.com/qmk/qmk_firmware/tree/master/keyboards).
 
 ## QMK setup, build and upload
-As-built setup, build and upload notes
+As-built environment setup, build and flash notes.
+
+See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_tools) and the [make instructions](https://docs.qmk.fm/#/getting_started_make_guide) for more information. Brand new to QMK? Start with our [Complete Newbs Guide](https://docs.qmk.fm/#/newbs).
+
 ```
+# Environment one-time setup
 mkdir -p ~/src/github.com/whateverany-org/qmk
 git clone git@github.com:qmk/qmk_firmware.git
 cd ~/src/github.com/qmk/qmk_firmware/keyboards
@@ -18,41 +22,40 @@ python3 -m venv .venv
 source .venv/bin/activate
 pip install qmk
 qmk setup
+
+# Environment everytime setup
+source .venv/bin/activate
+
+# Compile keyboards
+qmk compile -kb whateverany -km badd40
+qmk compile -kb whateverany -km beef60
+qmk compile -kb whateverany -km babe30
+
+# Flashing keyboards
+qmk flash -kb whateverany -km badd40
+qmk flash -kb whateverany -km beef60
+qmk flash -kb whateverany -km babe30
 ```
-### As-Built images
+
+### As-Built keyboard images
 ![keyboard_build_01](images/keyboard_build_01.jpg?raw=true "keyboard_build_01")
+
 ![keyboard_build_02](images/keyboard_build_02.jpg?raw=true "keyboard_build_02")
 
 ### badd40
 ![badd40](images/badd40.jpg?raw=true "badd40")
 
-#### about
-Originally inspired by the _[planck](https://github.com/qmk/qmk_firmware/tree/master/keyboards/planck/)_ which led me to the [40% club](https://www.40percent.club), and things like the _[let's split](https://www.40percent.club/2017/07/conjoined-lets-split.html)_, and  the _[tetrominoes](https://www.40percent.club/2019/12/tetrominoes.html).
+Originally inspired by the _[planck](https://github.com/qmk/qmk_firmware/tree/master/keyboards/planck/)_ which led me to the [40% club](https://www.40percent.club), and things like the _[let's split](https://www.40percent.club/2017/07/conjoined-lets-split.html)_, and  the _[tetrominoes](https://www.40percent.club/2019/12/tetrominoes.html)_.
 
-* Keyboard Maintainer: [whateverany](https://github.com/whateverany)
-* Hardware Supported: *The PCBs, controllers supported*
-* Hardware Availability: *Links to where you can find this hardware*
-
-Compile/flash example for this keyboard (after setting up your build environment):
-
-```
-qmk compile -kb whateverany -km badd40
-```
-
-Flashing example for this keyboard:
-
-```
-qmk flash -kb whateverany -km badd40
-```
-
-See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_tools) and the [make instructions](https://docs.qmk.fm/#/getting_started_make_guide) for more information. Brand new to QMK? Start with our [Complete Newbs Guide](https://docs.qmk.fm/#/newbs).
 
 ### beef60
 ![beef60](images/beef60.jpg?raw=true "beef60")
+
 Intended to be a keyboard for the gamers in the family.
 
 ### babe30
 ![babe30](images/babe30.jpg?raw=true "babe30")
+
 Inspired by the [gherkin](https://www.40percent.club/2016/11/gherkin.html).
 
 ## Hardware
