@@ -17,13 +17,13 @@
 #include QMK_KEYBOARD_H
 
 enum badd_fourty_layers {
-  _QWERTY,
+  _DEFAULT,
   _LOWER,
   _RAISE,
   _ADJUST
 };
 
-#define QWERTY DF(_QWERTY)
+#define DEFAULT DF(_DEFAULT)
 #define LOWER MO(_LOWER)
 #define RAISE MO(_RAISE)
 #define ADJUST MO(_ADJUST)
@@ -43,7 +43,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 .└────────┴────────┴────────┴────────┴────────┴────────┴────────┴────────┴────────┴────────┴────────┴────────┘.
 ...............................................................................................................
  */
-[_QWERTY] = LAYOUT_ortho_4x12(
+[_DEFAULT] = LAYOUT_ortho_4x12(
    KC_ESC,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_BSPC,
    KC_TAB,  KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_QUOT,
    ADJUST,  KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_INS ,
@@ -136,3 +136,12 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     return true;
 }
 */
+
+void keyboard_post_init_user(void) {
+    rgblight_enable_noeeprom();
+    // rgblight_mode_noeeprom(RGBLIGHT_MODE_STATIC_LIGHT);
+    rgblight_mode_noeeprom(RGBLIGHT_MODE_RAINBOW_MOOD);
+    // rgblight_mode_noeeprom(RGBLIGHT_MODE_BREATHING);
+    rgblight_sethsv_noeeprom(HSV_RED);
+}
+

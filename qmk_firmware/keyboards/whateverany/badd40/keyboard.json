@@ -19,28 +19,23 @@
     "nkro": true,
     "rgblight": true
   },
-  "indicators": {
-    "caps_lock": "GP25",
-    "on_state": 0
-  },
   "ws2812": {
     "pin": "GP23",
     "driver": "vendor"
   },
   "rgblight": {
     "led_count": 1,
+    "max_brightness": 32,
     "animations": {
-      "alternating": true,
-      "breathing": true,
-      "christmas": true,
-      "knight": true,
-      "rainbow_mood": true,
-      "rainbow_swirl": true,
       "rgb_test": true,
-      "snake": true,
-      "static_gradient": true,
-      "twinkle": true
+      "breathing": true,
+      "rainbow_mood": true,
+      "rainbow_swirl": true
     }
+  },
+  "indicators": {
+    "caps_lock": "GP25",
+    "on_state": 0
   },
   "meta": "https://whateverany.com/whateverany-org/qmk",
   "url": "https://www.whateverany.com",
